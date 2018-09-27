@@ -315,3 +315,13 @@ https://github.com/bibanon/Coreboot-ThinkPads/wiki/xx30-BIOS-Whitelist-Removal
 	- Flushed kext cache to get audio working again (with KextUtility).
 	- Reboot and everything works againg. =)
 
+### Updating from 10.13.6 to 10.14.0 Mojave
+	- Installed new apfs.efi in /EFI/CLOVER/drivers64UEFI/
+	- Update some kext in repo
+	- Download macOS 10.14.0 from Appstore
+	- Rebooted after installation and (automatically) chose the Install option in Clover.
+	- Everyting (including sound) worked without a kext cache flush.
+	- If sound not work, you need download new Lilu and and AppleALC kext and install them (I pushed them to kexts folder)
+	- Add -alcbeta -lilubeta to custom flags in Clover and Devices -> Audio -> 28
+	- Flushed kext cache to get audio working again (with KextUtility).
+	- Reboot and everything works againg. =)
