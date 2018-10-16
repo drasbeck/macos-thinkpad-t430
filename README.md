@@ -315,7 +315,7 @@ https://github.com/bibanon/Coreboot-ThinkPads/wiki/xx30-BIOS-Whitelist-Removal
 	- Flushed kext cache to get audio working again (with KextUtility).
 	- Reboot and everything works againg. =)
 
-### Updating from 10.13.6 to 10.14.0 Mojave
+### Updating from 10.13.6 to 10.14.0 Mojave (Mic build in not working)
 	- Installed new apfs.efi in /EFI/CLOVER/drivers64UEFI/
 	- Update some kext in repo
 	- Download macOS 10.14.0 from Appstore
