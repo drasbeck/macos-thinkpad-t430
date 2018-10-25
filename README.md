@@ -14,7 +14,7 @@ Credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 * Brightness (FULL Range + Fn Brightness Keys)
 * Display Port Out: FullHD + Audio
 * Battery Status
-* WiFi (I use an Atheros AR5BHB92 [rebranded](https://github.com/ThiagoSchetini/AR9285-rebranding))
+* Wi-Fi (I use an Atheros AR5BHB92 [rebranded](https://github.com/ThiagoSchetini/AR9285-rebranding))
 * Ethernet
 * Sleep
 * Display turns on automatically on wake/instant wake
@@ -221,7 +221,7 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 	on /usr/local/bin/clover-genconfig > config.plist
 	execute and take the xml
 
-#### HOW TO FLASH T430 BIOS (if you want to install an 1300AC WiFi …)
+#### HOW TO FLASH T430 BIOS (if you want to install an 1300AC Wi-Fi …)
 
 https://github.com/bibanon/Coreboot-ThinkPads/wiki/xx30-BIOS-Whitelist-Removal
 
@@ -318,12 +318,13 @@ https://github.com/bibanon/Coreboot-ThinkPads/wiki/xx30-BIOS-Whitelist-Removal
 ### Updating from 10.13.6 to 10.14.0 Mojave
 	- Installed new apfs.efi in /EFI/CLOVER/drivers64UEFI/
 	- Updated to newest kexts
-	- Moved all custom kexts from /S/L/E to /EFI/CLOVER/kexts/Other
+	- Moved all custom kexts from /S/L/E to /EFI/CLOVER/kexts/Other for easier future upgrades.
+	- Copied old official IO80211Family.kext and IO80211FamilyV2.kext from HS S/L/E to Mojave S/L/E - to get Wi-Fi working (specific to my Wi-Fi adapter (Atheros AR5BHB92)).
 	- Downloaded and ran macOS 10.14.0 installer from App Store
 	- Rebooted after installation and (automatically) chose the Install option in Clover.
 	- If sound does not work (which was my case), you need Lilu and AppleALC kexts, they can be found in the kexts folder.
 	- Flush kext cache and see if audio is working again (with KextUtility).
 	- If not (I did not need to do this):
-		- Try adding -alcbeta -lilubeta to custom flags in Clover and Devices -> Audio -> 28
+		- Try adding -alcbeta -lilubeta to custom flags in Clover and set Devices -> Audio -> 28
 		- Flush kext cache to get audio working again (with KextUtility).
 	- Reboot and everything should work again. =)
