@@ -328,3 +328,12 @@ https://github.com/bibanon/Coreboot-ThinkPads/wiki/xx30-BIOS-Whitelist-Removal
 		- Try adding -alcbeta -lilubeta to custom flags in Clover and set Devices -> Audio -> 28
 		- Flush kext cache to get audio working again (with KextUtility).
 	- Reboot and everything should work again. =)
+	
+### Updating from 10.14.0 to 10.14.1
+	- Update AppleALC.kext to verstion 1.3.3 in /EFI/CLOVER/kexts/Other
+		- get kext here: https://github.com/acidanthera/AppleALC/releases
+	- Install old official IO80211Family.kext and IO80211FamilyV2.kext from HS S/L/E to Mojave S/L/E with KextUtility.
+		- specific to non working Atheros adapters (e.g.: AR5BHB92)
+	- Install update via Software Update.
+	- Done!
+
