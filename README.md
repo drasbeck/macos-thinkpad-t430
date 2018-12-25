@@ -1,14 +1,15 @@
+## Vanilla macOS on T430, almost perfectly with High Sierra 10.13
+
 [![HitCount](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430}.svg)](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430})
 
-Vanilla macOS on T430, almost perfectly with High Sierra 10.13
 
 
 Credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 
 
 #### WORKING =)
-* Intel Hyperthread (4 cores) - I have the i5-3320M.
-* Intel TurboBoost (up to 3.2 Ghz)
+* Intel Hyperthread (4 cores) - I have the i5-3320M & i7-3632QM.
+* Intel TurboBoost
 * Intel SpeedStep
 * CPU HW Monitor (temps, clock and power)
 * RAM DDR3 at 1600mhz
@@ -23,16 +24,13 @@ Credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 * USB 3.0 Full Speed
 * Audio ALC269
 * Webcam + Mic
-* Keyboard + TouchPad <- switch mapping of < and $.
+* Keyboard + TouchPad
 * Bluetooth: bought and installed this [BT daughter card](https://www.aliexpress.com/item/Free-shipping-New-original-bluetooth-module-4-0-for-Lenovo-Thinkpad-X220-X230-T420-T430-T530/1640038938.html) worked out of the box. *Sadly no Handoff - yet*
 
 
 #### NOT WORKING ...
-* On Shutdown, sometimes need to remove USB devices otherwise system will restart.
-* SSD Trim (Works, but I have disabled it.)
-* VGA output (No support.)
+* VGA output
 * SD Card Reader <- never tested.
-
 
 
 #### Creating the installer
@@ -228,6 +226,7 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 https://github.com/bibanon/Coreboot-ThinkPads/wiki/xx30-BIOS-Whitelist-Removal
 
 ## Updates
+A running log of the changes made with each released update.
 
 ### Updating from Sierra to High Sierra (10.12.6) (Windows edition)
 	- Downloaded full macOS 10.13.6 from App Store
