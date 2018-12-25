@@ -1,4 +1,4 @@
-## Vanilla macOS on T430, almost perfectly with High Sierra 10.13
+## Vanilla macOS on T430, working almost perfectly
 
 [![HitCount](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430}.svg)](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430})
 
@@ -30,7 +30,7 @@ Credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 
 #### NOT WORKING ...
 * VGA output
-* SD Card Reader <- never tested.
+* SD Card Reader <- never tested
 
 
 #### Creating the installer
