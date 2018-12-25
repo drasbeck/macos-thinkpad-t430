@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430}.svg)](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430})
+
 Vanilla macOS on T430, almost perfectly with High Sierra 10.13
 
 
