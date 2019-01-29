@@ -336,9 +336,12 @@ A running log of the changes made with each released update.
 	- Install old official IO80211Family.kext and IO80211FamilyV2.kext from HS S/L/E to Mojave S/L/E with KextUtility.
 		- specific to non working Atheros adapters (e.g.: AR5BHB92)
 	- Install update via Software Update.
-	- Done!
 
 ### Updating from 10.14.1 to 10.14.2
 	- Install update via Software Update.
 	- Flush kext cache (to get audio).
-	- Done.
+
+### Updating from 10.14.2 to 10.14.3
+	- Update AppleALC.kext and Lilu.kext via Clover Configurator.
+	- Install update via Software Update.
+	- Flush kext cache (to get audio).
