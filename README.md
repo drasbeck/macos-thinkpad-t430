@@ -8,7 +8,7 @@ Credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 
 
 #### WORKING =)
-* Intel Hyperthread (4 cores) - I have the i5-3320M & i7-3632QM.
+* Intel Hyperthread (4/8 cores) - I have the i5-3320M & i7-3632QM.
 * Intel TurboBoost
 * Intel SpeedStep
 * CPU HW Monitor (temps, clock and power)
