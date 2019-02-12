@@ -345,3 +345,9 @@ A running log of the changes made with each released update.
 	- Update AppleALC.kext and Lilu.kext via Clover Configurator.
 	- Install update via Software Update.
 	- Flush kext cache (to get audio).
+
+### Updating from 10.14.3 to 10.14.3 Supplemental Update
+	- Update outdated kexts and UEFI drivers via Clover Configurator.
+	- Update to latest stable Clover, preserving settings from earlier install.
+	- Install Supplemental Update via Software Update.
+	- Flush kext cache (to get audio).
