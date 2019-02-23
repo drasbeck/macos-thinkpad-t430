@@ -172,6 +172,11 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
         sudo mkdir /var/vm/sleepimage
         sudo pmset -a standby 0
         sudo pmset -a autopoweroff 0
+        
+#### Fan Patch (Get speed readout and make it quiet)
+     - Apply "fan patch/t430-fan-patch.txt" to your DSDT file using maciASL. 
+     - Load ACPIPoller.kext using Kext Utility (make sure to use this version because it has a modified Info.plist)
+     - Reboot and enjoy fan speed readouts and a quiet T430 :)
 
 **And that's it! You're done. (Hopefully.)** =)
 

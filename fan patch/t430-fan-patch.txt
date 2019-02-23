@@ -1,0 +1,57 @@
+# Add FAN Sensor and more quiet fan curve
+
+into device label EC insert
+begin
+Field (ECOR, ByteAcc, NoLock, Preserve)\n
+{\n
+    Offset (0x84),\n 
+    HFN1,   8,\n
+    HFN2,   8\n
+}\n
+end;
+
+into device label SMCD remove_entry;
+into device label LPC insert
+begin
+Device (SMCD)\n
+{\n
+    Name (_HID, "MON0000")  // _HID: Hardware ID\n
+    Method (FAN0, 0, NotSerialized)\n
+    {\n
+        Store (B1B2 (^^EC.HFN1, ^^EC.HFN2), Local0)\n
+        Return (Local0)\n
+    }\n
+
+    Method (TCPU, 0, NotSerialized)\n
+    {\n
+        Store (^^EC.TMP0, Local0)\n
+        Store (^^EC.TMP0, Local0)\n
+        If (LLessEqual (Local0, 0x32))\n
+        {\n
+            Store (Zero, ^^EC.HFSP)\n
+        }\n
+        If (LGreaterEqual (Local0, 0x55))\n
+        {\n
+            Store (0x40, ^^EC.HFSP)\n
+        }\n
+        ElseIf (LGreaterEqual (Local0, 0x4B))\n
+        {\n
+            Store (0x07, ^^EC.HFSP)\n
+        }\n
+        ElseIf (LGreaterEqual (Local0, 0x46))\n
+        {\n
+            Store (0x04, ^^EC.HFSP)\n
+        }\n
+        ElseIf (LGreaterEqual (Local0, 0x41))\n
+        {\n
+            Store (0x02, ^^EC.HFSP)\n
+        }\n
+        ElseIf (LGreaterEqual (Local0, 0x3D))\n
+        {\n    
+            Store (One, ^^EC.HFSP)\n
+        }\n
+
+        Return (Local0)\n
+    }\n
+}\n
+end;
