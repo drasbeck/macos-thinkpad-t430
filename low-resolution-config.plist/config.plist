@@ -127,46 +127,62 @@
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>hotswap</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
+				<data>icglQGACAD1AIAAAdQyB4b9///+Ji1EBAAA=</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>
-				aQLsEA==
-				</data>
+				<data>kJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>fix I/O error for ICH10</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>RYX2D5XCiciD4P5mhcl4D4TSdQs=</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleAHCIPort</string>
+				<key>Replace</key>
+				<data>iciD4P5mhckPmMFBCMyQkJCQdQs=</data>
 			</dict>
 			<dict>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				hQjsEA==
-				</data>
+				<data>hBnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>aQLsEA==</data>
 			</dict>
 			<dict>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gxnUEQ==
-				</data>
+				<data>hQjsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>gxnUEQ==</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>AAAAAA==</data>
 			</dict>
 		</array>
 	</dict>
