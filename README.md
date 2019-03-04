@@ -195,7 +195,7 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 			[usb] USB3_PRW 0x0D (instant wake)
 				-> to have sleep working (original Rehabman code)
 
-			[audio] Audio Layout 28
+			[audio] Audio Layout 29
 				-> to work with the ALC269 kext (original Rehabman code)
 
 			[sys] IRQ Fix
