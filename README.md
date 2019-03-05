@@ -8,7 +8,7 @@ Initial credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 
 Also thanks to the contributors, you guys!! =)
 * [nghminh163](https://github.com/nghminh163): maintenance, windows to macOS guide, i3360m SSDT 
-* [123marvin123](https://github.com/123marvin123): fan speed fix, trackpoint fix, caddy fix.
+* [123marvin123](https://github.com/123marvin123): fan speed fix, trackpoint fix, Mojave mic fix.
 
 
 #### WORKING =)
