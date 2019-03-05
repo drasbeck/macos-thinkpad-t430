@@ -104,7 +104,7 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 				Enter in the clover boot menu and press F4 and FN+F4
 				That’s all. It’s gonna be on EFI/CLOVER/ACPI/origin
 
-			-> Then disassemble the DSDT.aml and DSDT’s.aml (0, 1, 2 etc…) only:
+			-> Then disassemble the DSDT.aml and SSDT’s.aml (0, 1, 2 etc…) only:
 				never open these files directly on MacIASL, it will actually ruin them
 				instead copy the .aml's to it's own directory with the refs.txt from tools/iasl
 				use the iasl command in terminal (see tools/iasl/howTo.txt)
