@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Script to disable conversion to APFS during a High Sierra clean installation
+#
+# Copyright (C) tonymacx86 LLC
+
+INSTALLDATA="macOS Install Data"
+
+if [ $(find /Volumes -name minstallconfig.xml -maxdepth 3 | wc -l ) -eq 0 ]; then
+	echo -e "\n"
+	echo -e "!!! No volumes with /$INSTALLDATA/minstallconfig.xml found, exiting !!!\n"
+	echo -e "\n"
+	exit 1
+fi
+
+if [ $(find /Volumes -name minstallconfig.xml | grep -v Locked | wc -l ) -eq 1 ]; then
+	DESTVOL=`find /Volumes -name minstallconfig.xml | grep -v Locked | awk -F "/" '{print $3}'`
+	cd /Volumes/"$DESTVOL"/"$INSTALLDATA"/
+	/usr/libexec/PlistBuddy -c "Set :ConvertToAPFS false" minstallconfig.xml
+	echo -e "\n"
+	echo -e "Changed Installation Volume \"$DESTVOL\" to not convert volume to APFS during macOS installation\n"
+	echo -e "\n"
+else
+	echo -e "\n"
+	echo -e "!!! More than one /$INSTALLDATA/minstallconfig.xml found, exiting !!!\n"
+	echo -e "\n"
+	exit 1
+fi
+

@@ -1,0 +1,6 @@
+Install this content to /usr/bin
+
+	** Disassembly (best way)
+	Copy SSDT and DSDT files (-0, -1, etc…) to a folder
+	Navigate to the directory and then execute the following command:
+	iasl -da -dl -fe refs.txt DSDT.aml SSDT*.aml
