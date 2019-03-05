@@ -120,7 +120,7 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 				on your .dsl find for “Return (WAKI)”
 				In the method calls above "Return (WAKI)" you'll find:
 					\_SB.PCI0.LPC.EC.LED(Zero, 0x80)
-    					\_SB.PCI0.LPC.EC.LED(0x07, 0x00)
+					\_SB.PCI0.LPC.EC.LED(0x07, 0x00)
 				substitute these two lines with:
 					\_SI._SST (One)
         				\_GPE._L1D ()
