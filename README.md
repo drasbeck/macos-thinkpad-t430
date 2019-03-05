@@ -4,7 +4,11 @@
 
 
 
-Credits goes to ThiagoSchetini & Rehabman, thanks bunches!
+Initial credits goes to ThiagoSchetini & Rehabman, thanks bunches!
+
+Also thanks to the contributors, you guys!! =)
+* [nghminh163](https://github.com/nghminh163): maintenance, windows to macOS guide, i3360m SSDT 
+* [123marvin123](https://github.com/123marvin123): fan speed fix, trackpoint fix, Mojave mic fix.
 
 
 #### WORKING =)
@@ -100,25 +104,28 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 				Enter in the clover boot menu and press F4 and FN+F4
 				That’s all. It’s gonna be on EFI/CLOVER/ACPI/origin
 
-			-> Them disassembly correctly only the DSDT.aml and DSDT’s.aml (0, 1, 2 etc…)
-				please, don’t open directly on MacIASL!
-				use iasl on terminal (look at tools folder/iasl howTo.txt)
+			-> Then disassemble the DSDT.aml and DSDT’s.aml (0, 1, 2 etc…) only:
+				never open these files directly on MacIASL, it will actually ruin them
+				instead copy the .aml's to it's own directory with the refs.txt from tools/iasl
+				use the iasl command in terminal (see tools/iasl/howTo.txt)
 
 			-> patch your DSDT.dsl with all the code from file “…-dsdt-patch.txt” using MacIASL
 				it includes only the necessary code to Thinkpad T430
 				* choose low resolution for 1366 x 762
 				* choose high resolution for 1600 x 900 or +
+				
+			-> patch with "fan patch/t430-fan-patch.txt" DSDT file using maciASL. 
 
 			-> manually last patch for screen turn on after wake (Warning! It’s a manual change)
 				on your .dsl find for “Return (WAKI)”
-				On the last two method calls there is:
+				In the two method calls above "Return (WAKI)" find:
 					\_SB.PCI0.LPC.EC.LED(Zero, 0x80)
     					\_SB.PCI0.LPC.EC.LED(0x07, 0x00)
-				change for (carefull with identation, must be perfect):
+				and substitute with (identation must be perfect):
 					\_SI._SST (One)
         				\_GPE._L1D ()
 
-			-> Save from MacIASL as binary (.aml) and paste on ACPI/patched inside clover UEFI
+			-> Save with MacIASL as binary (.aml) and copy file to ACPI/patched on clover UEFI
 
 			-> Generate your own SSDT (Power Management for your processor)
 				https://www.tonymacx86.com/threads/quick-guide-to-generate-a-ssdt-for-cpu-power-management.177456/
@@ -134,12 +141,14 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
 
 #### Kexts
 
-	- Make a beckup of AppleBacklight.kext (Brightness)
+	- Make a backup of AppleBacklight.kext (Brightness)
 		Why? for future updates you need to reinstall the original and then reinstall the pached
 
 		** Warning!, the backlight kext inside kexts folder is patched for T430 brightness full range control
 
 	- Now, install all the kexts from the folder using “Kext Utility.app” (look inside tools folder)
+        - Be sure to use ACPIPoller.kext from this repo because it uses a modified Info.plist
+
 
 #### Voodoo Extra Files (for Keyboard)
 
@@ -172,11 +181,6 @@ If you have installed an SSD and a HDD in your T430, you can gain the advantages
         sudo mkdir /var/vm/sleepimage
         sudo pmset -a standby 0
         sudo pmset -a autopoweroff 0
-        
-#### Fan Patch (Get speed readout and make it quiet)
-     - Apply "fan patch/t430-fan-patch.txt" to your DSDT file using maciASL. 
-     - Load ACPIPoller.kext using Kext Utility (make sure to use this version because it has a modified Info.plist)
-     - Reboot and enjoy fan speed readouts and a quiet T430 :)
 
 **And that's it! You're done. (Hopefully.)** =)
 
