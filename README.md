@@ -38,7 +38,7 @@ Also thanks to the contributors, you guys!! =)
 
 
 #### Creating the installer
-	- You'll need thumbdrive of at least 8 GB, jHFS+ formatted.
+	- You'll need thumbdrive of at least 8 GB, HFS+ formatted.
 
     - Use Unibeast to create the installer. Select UEFI and no ATI/nVidia.
 
