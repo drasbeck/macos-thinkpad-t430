@@ -126,3 +126,14 @@ Return to [README.md](README.md)
 	- Update to latest stable Clover, preserving settings from earlier install.
 	- Install Supplemental Update via Software Update.
 	- Flush kext cache (to get audio).
+	
+### Updating from 10.14.3 SupplementalUpdate to 10.14.4
+	- Update Clover to at least rev. 4910
+	- Update AppleALC to resolve audio issues.
+	- Flush kext cache (to get audio).
+
+### Updating from 10.14.4 to 10.14.5
+	- Update outdated kexts and UEFI drivers via Clover Configurator.
+	- Update to latest stable Clover, preserving settings from earlier install.
+	- Install update via Software Update.
+	- Flush kext cache (to get audio).
