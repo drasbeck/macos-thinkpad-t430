@@ -137,3 +137,8 @@ Return to [README.md](README.md)
 	- Update to latest stable Clover, preserving settings from earlier install.
 	- Install update via Software Update.
 	- Flush kext cache (to get audio).
+
+### Updating from 10.14.5 to 10.14.6
+	- Update outdated kexts and UEFI drivers via Clover Configurator.
+	- Install update via Software Update with reboots.
+	- Flush kext cache (to get audio).
