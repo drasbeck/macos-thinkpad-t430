@@ -142,3 +142,10 @@ Return to [README.md](README.md)
 	- Update outdated kexts and UEFI drivers via Clover Configurator.
 	- Install update via Software Update with reboots.
 	- Flush kext cache (to get audio).
+
+### Updating from 10.14.6 to 10.14.6 Supplemental Update (18G87)
+
+### Updating from 10.14.6 Supplemental Update (18G87) to 10.14.6 Supplemental Update (18G95)
+	- Update Clover to v 5058
+	- Install update via Software Update with complementary reboots.
+	- Flush kext cache (to get audio).
