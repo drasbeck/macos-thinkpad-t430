@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.2.4.2</string>
+	<string>3.3.6</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>3.2.4</string>
+	<string>3.3.6</string>
 	<key>DTCompiler</key>
 	<string></string>
 	<key>DTPlatformBuild</key>
@@ -50,8 +50,10 @@
 			<integer>256</integer>
 			<key>IOClass</key>
 			<string>AppleIntelE1000e</string>
-			<key>IOPCIMatch</key>
-			<string>0x15b78086 0x15b88086 0x156f8086 0x15708086 0x153a8086 0x153b8086 0x15598086 0x155a8086 0x15a08086 0x15a18086 0x15a28086 0x15a38086 0x10968086 0x10988086 0x10ba8086 0x10bb8086 0x10cc8086 0x10cd8086 0x10ce8086 0x10de8086 0x10df8086 0x15258086 0x15018086 0x10498086 0x104a8086 0x104b8086 0x104c8086 0x104d8086 0x10c48086 0x10c58086 0x10bd8086 0x10bf8086 0x10c08086 0x10c28086 0x10c38086 0x10cb8086 0x10e58086 0x10f58086 0x294c8086 0x105e8086 0x105f8086 0x10608086 0x10a48086 0x10a58086 0x10bc8086 0x10d58086 0x10d98086 0x10da8086 0x107d8086 0x107e8086 0x107f8086 0x10b98086 0x108b8086 0x108c8086 0x109a8086 0x10d38086 0x10ea8086 0x10eb8086 0x10ef8086 0x10f08086 0x15028086 0x15038086 0x150c8086</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x02000000&amp;0xffff0000</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x10008086&amp;0x0000ffff</string>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 			<key>NETIF_F_TSO</key>
