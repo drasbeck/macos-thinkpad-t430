@@ -4,6 +4,7 @@ This file contains a running log of the changes made between macOS versions. It 
 Return to [README.md](README.md)
 
 ### Updating from Sierra to High Sierra (10.12.6) (Windows edition)
+#### (I did not do this, it's here for educational purposes)
 	- Downloaded full macOS 10.13.6 from App Store
 	- Copy latest apfs.efi to /EFI/Clover/drivers64UEFI
 	- Backup all kext and update with Install High Sierra.app
@@ -147,5 +148,14 @@ Return to [README.md](README.md)
 
 ### Updating from 10.14.6 Supplemental Update (18G87) to 10.14.6 Supplemental Update (18G95)
 	- Update Clover to v 5058
+	- Install update via Software Update with complementary reboots.
+	- Flush kext cache (to get audio).
+	
+### Updating from 10.14.6 Supplemental Update (18G95) to 10.14.6 Supplemental Update 2
+	- Install update via Software Update with complementary reboots.
+	- Flush kext cache (to get audio).
+
+### Updating from 10.14.6 Supplemental Update 2 to 10.15.0 Catalina
+	- Update Clover to v 5070
 	- Install update via Software Update with complementary reboots.
 	- Flush kext cache (to get audio).
