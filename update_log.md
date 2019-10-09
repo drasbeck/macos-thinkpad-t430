@@ -160,3 +160,4 @@ Return to [README.md](README.md)
 	- Update AppleALC.kext, Lilu.kext and WhateverGreen.kext to latest versions 
 	- Install update via Software Update with complementary reboots (this took a looong time).
 	- Flush kext cache (to get audio).
+	- No WiFi and BT for now, working on it.
