@@ -161,3 +161,8 @@ Return to [README.md](README.md)
 	- Install update via Software Update with complementary reboots (this took a looong time).
 	- Flush kext cache (to get audio).
 	- WiFi is working with gnarly fix, not sure if I could do better.
+
+### Updating from 10.15.0 Catalina (19A583) to 10.15.0 Catalina (19A602)
+	- Install update via Software Update with complementary reboots.
+	- Move IO80211Family.kext to kexts/Other, now WiFi just works. =)
+	- Flush kext cache (to get audio).
