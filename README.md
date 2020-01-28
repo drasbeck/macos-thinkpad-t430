@@ -1,4 +1,4 @@
-**January 2020:** I am no longer following the T430 iGPU Hackintosh cat and mouse game, as my Hackintosh has moved on to greener pastures. I would love to open up the repository for collaborators, as it seems it has at least some traction as a T430 Hackintosh repo. Users should also still feel free to create PRs for fixes with regards to new versions of macOS.
+**January 2020:** I am no longer following the T430 iGPU Hackintosh cat and mouse game, as my Hackintosh has moved on to greener pastures. I would love to open up the repository for collaborators, as it seems it has at least _some_ traction as a T430 Hackintosh repo. Users should also still feel free to create PRs for fixes with regards to new versions of macOS.
 
 ## Vanilla macOS on T430, working almost perfectly
 
