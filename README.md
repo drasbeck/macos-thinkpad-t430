@@ -1,3 +1,5 @@
+**January 2020:** I am no longer following the T430 iGPU Hackintosh cat and mouse game, as my Hackintosh has moved on to greener pastures. I would love to open up the repository for collaborators, as it seems it has at least some traction as a T430 Hackintosh repo. Users should also still feel free to create PRs for fixes with regards to new versions of macOS.
+
 ## Vanilla macOS on T430, working almost perfectly
 
 [![HitCount](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430}.svg)](http://hits.dwyl.io/{drasbeck}/{macos-thinkpad-t430})
@@ -6,7 +8,7 @@
 
 Initial credits goes to ThiagoSchetini & Rehabman, thanks bunches!
 
-Also thanks to the contributors, you guys!! =)
+Also thanks to the contributors, you guys!! :black_heart:
 * [nghminh163](https://github.com/nghminh163): maintenance, windows to macOS guide, i3360m SSDT 
 * [123marvin123](https://github.com/123marvin123): fan speed fix, trackpoint fix, Mojave mic fix, high res DP/DVI out fix.
 
