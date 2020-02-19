@@ -6937,14 +6937,8 @@ DefinitionBlock ("", "DSDT", 1, "LENOVO", "TP-G1   ", 0x00002700)
                     {
                         Method (_Q6A, 0, NotSerialized)  // _Qxx: EC Query
                         {
-                            If (HDMC)
-                            {
-                                Noop
-                            }
-                            ElseIf (\_SB.PCI0.LPC.EC.HKEY.MHKK (0x04000000))
-                            {
-                                \_SB.PCI0.LPC.EC.HKEY.MHKQ (0x101B)
-                            }
+                            Notify(\_SB.PCI0.LPC.KBD, 0x0168)
+                            Notify(\_SB.PCI0.LPC.KBD, 0x01e8)
                         }
                     }
 
